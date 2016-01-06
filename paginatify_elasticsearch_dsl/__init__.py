@@ -18,3 +18,6 @@ class Pagination(_Pagination):
         wrapper = SearchWrapper(search)
         super(Pagination, self).__init__(wrapper, **kwargs)
         self.result_set = wrapper.result_set
+
+
+SearchPagination = Pagination
